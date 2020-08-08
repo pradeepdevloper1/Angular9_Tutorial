@@ -17,6 +17,13 @@ subTitle='this is subtitle';
 placeholderVal='enter name'; 
 hrefVal='http://google.com';
 updateLink='http://oracle.com';
+showAlert(id){
+  alert("Clicked"+id);
+}
+consoleLog(){
+  console.log( 'Focus Event');
+}
+firstname='';
 constructor() { }
 
   ngOnInit(): void {

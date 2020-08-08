@@ -1,0 +1,39 @@
+<p>ng !</p>
+<div *ngIf="showMsg; else showElseMsg">IF StateMent</div>
+<ng-template #showElseMsg> Show Else Msg</ng-template>
+
+<h3>NGSwitch</h3>
+<div [ngSwitch]="switchvalue">
+    <div *ngSwitchCase="1">Value passed is :1</div>
+    <div *ngSwitchCase="2">Value passed is :2</div>
+    <div *ngSwitchCase="3">Value passed is :3</div>
+    <div *ngSwitchCase="4">Value passed is :4</div>
+    <div *ngSwitchCase="5">Value passed is :5</div>
+</div>
+
+
+<h3>NG For</h3>
+<table class="table" >
+    <th>UserID</th>
+    <th>FirstName</th>
+    <th>Index</th>
+    <th>first</th>
+    <th>last</th>
+    <th>even</th>
+    <th>odd</th>
+    <tr *ngFor="let usr of users; index as i; first as f ;last as l ;even as e ; odd as o">
+        <td>{{usr.userID}}</td>
+        <td>{{usr.firstname}}</td>
+        <td>{{i}}</td>
+        <td>{{f}}</td>
+        <td>{{l}}</td>
+        <td>{{e}}</td>
+        <td>{{o }}</td>
+    </tr>
+</table>
+<h3>Ng style</h3>
+<div [ngStyle]="{'color':colorval}"> NG Style with color Dynamically</div>
+
+<h3>Ng Class</h3>
+<div [ngClass]="[clsName,clsName2]">Learning NgClass</div>
+<div [ngClass]="{'one':false,'two':true}">Learning NgClass with Expression</div>

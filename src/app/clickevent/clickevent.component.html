@@ -1,0 +1,8 @@
+<h1>Click Event in Angular</h1>
+<button (click)="testFunc()">click me!</button>
+<br>
+<button (click)="testFunc2('hello ')">click me2!</button>
+<br>
+<input type="text" (keyup)="getVal($event)" >
+<br>
+<input type="text" (keyup)="getVal2($event)" #txt><button (click)="getTextBoxValue(txt)" >GetValue</button>

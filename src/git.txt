@@ -1,0 +1,6 @@
+
+git add .
+git commit -m "commt message"
+git remote add origin https://github.com/pradeepdeveloper1/Angular9-Tutorial.git
+
+git push -u origin master

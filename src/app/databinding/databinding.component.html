@@ -1,0 +1,25 @@
+
+<h2>one way data Binding </h2>
+<p>1. Component To View </p>
+<p>1.1 Interpolation </p>
+<p>1.2 Property Binding </p>
+<p>1.3 Style Binding </p>
+<p>1.4 Attribute Binding </p>
+<p> 2.   View  To Component</p>
+<p>2.1 Event binding </p>
+<h2>Two way data Binding </h2>
+<p>Data flows from view to componnt and then back from component to view</p>
+ <h1  >Welcome to {{title}}</h1>   
+ <div >{{user.userID}}</div>
+ <div >{{user.UserName}}</div>
+ <div >{{user.status}}</div>
+
+ <h2>Property Binding</h2>
+ <div [ngStyle]="{color:colorVal}"> This is a example of Property Binding</div>
+ <p [innerHTML]="subTitle"></p>
+ <div [ngClass]="'c1'">setting property via property Binding</div>
+<input [placeholder]="placeholderVal">
+
+<h2>Attribute Binding</h2>
+<a [href]="hrefVal" [attr.updateLink]='updateLink'>Google</a>
+

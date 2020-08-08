@@ -1,0 +1,8 @@
+what is interpolation?
+
+displaying a dynamic data displaying in html
+
+
+var interpolation
+obj interpolation
+array interpolation

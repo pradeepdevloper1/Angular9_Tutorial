@@ -10,7 +10,8 @@ import { DatabindingComponent } from './databinding/databinding.component';
 import { TemplatedrivenformComponent } from './templatedrivenform/templatedrivenform.component';
 import { PipeComponent } from './pipe/pipe.component';
 import { HighlightPipe } from './pipe/highlight.pipe';
-
+import { RoutingComponent } from './routing/routing.component';
+import {LocationStrategy,HashLocationStrategy} from '@angular/common';
 @NgModule({
   declarations: [
     AppComponent,
@@ -21,6 +22,7 @@ import { HighlightPipe } from './pipe/highlight.pipe';
     TemplatedrivenformComponent,
     PipeComponent,
     HighlightPipe,
+    RoutingComponent,
   
   ],
   imports: [
@@ -28,7 +30,9 @@ import { HighlightPipe } from './pipe/highlight.pipe';
     AppRoutingModule,
     FormsModule
   ],
-  providers: [],
+  providers: [
+    {provide:LocationStrategy,useClass:HashLocationStrategy}
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

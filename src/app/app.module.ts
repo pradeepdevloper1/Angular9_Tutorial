@@ -12,6 +12,12 @@ import { PipeComponent } from './pipe/pipe.component';
 import { HighlightPipe } from './pipe/highlight.pipe';
 import { RoutingComponent } from './routing/routing.component';
 import {LocationStrategy,HashLocationStrategy} from '@angular/common';
+import { ProductsComponent } from './products/products.component';
+import { ProductViewComponent } from './product-view/product-view.component';
+import { ProductEditComponent } from './product-edit/product-edit.component';
+import { ProductIdComponent } from './product-id/product-id.component';
+import { OrderViewComponent } from './order-view/order-view.component';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -23,6 +29,11 @@ import {LocationStrategy,HashLocationStrategy} from '@angular/common';
     PipeComponent,
     HighlightPipe,
     RoutingComponent,
+    ProductsComponent,
+    ProductViewComponent,
+    ProductEditComponent,
+    ProductIdComponent,
+    OrderViewComponent,
   
   ],
   imports: [
@@ -31,7 +42,7 @@ import {LocationStrategy,HashLocationStrategy} from '@angular/common';
     FormsModule
   ],
   providers: [
-    {provide:LocationStrategy,useClass:HashLocationStrategy}
+    // {provide:LocationStrategy,useClass:HashLocationStrategy}
   ],
   bootstrap: [AppComponent]
 })

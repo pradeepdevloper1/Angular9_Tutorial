@@ -9,7 +9,7 @@ import { SearchComponent } from './search/search.component';
 
 
 const routes: Routes = [
-  // { path:'',redirectTo:'enroll' , pathMatch:'full'},
+   { path:'',redirectTo:'product-view' , pathMatch:'full'},
   // { path:'**',redirectTo:'enroll' , pathMatch:'full'}
   { path:'products',component:ProductsComponent },
   { path:'product-view',component:ProductViewComponent },

@@ -8,6 +8,8 @@ import { ClickeventComponent } from './clickevent/clickevent.component';
 import { NGComponent } from './ng/ng.component';
 import { DatabindingComponent } from './databinding/databinding.component';
 import { TemplatedrivenformComponent } from './templatedrivenform/templatedrivenform.component';
+import { PipeComponent } from './pipe/pipe.component';
+import { HighlightPipe } from './pipe/highlight.pipe';
 
 @NgModule({
   declarations: [
@@ -16,7 +18,10 @@ import { TemplatedrivenformComponent } from './templatedrivenform/templatedriven
     ClickeventComponent,
     NGComponent,
     DatabindingComponent,
-    TemplatedrivenformComponent
+    TemplatedrivenformComponent,
+    PipeComponent,
+    HighlightPipe,
+  
   ],
   imports: [
     BrowserModule,

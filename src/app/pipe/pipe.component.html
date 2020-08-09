@@ -1,0 +1,54 @@
+<h1>Angular Pipe</h1>
+<p>Pipe are used to transform data</p>
+<p>pipe will take data and transform into desired format</p>
+<p>Pipe are written using opereator(|)</p>
+
+<h1>Types of Pipe</h1>
+<h2>1.Built in Pipe</h2>
+<h3>Lowercase</h3>
+<h3>Uppercase</h3>
+<h3>Currency</h3>
+<h3>Date</h3>
+<h2>2.Parameterized Pipe</h2>
+<h3>we can pass one or more parameter to pipe</h3>
+<h2>3. Chaining Pipe</h2>
+<h3>we can connect multiple pipe to data input</h3>
+<h2>4. Custom Pipe</h2>
+<h3>we can create our own custom pipe for various data formating</h3>
+
+
+<h2>BuiltIn Pipe</h2>
+<div>Name:{{user.firstName|uppercase}},{{user.lastName|lowercase}}</div>
+<div>DOB:{{user.DOB|date:'yyyy MM dd'}}</div>
+<div>DOB:{{user.DOB|date:'fullDate'}}</div>
+<div>DOB:{{user.DOB|date:'shortTime'}}</div>
+<div>DOB:{{user.DOB|date:'d/M/y'}}</div>
+<div>Salary:{{user.Salary|number:'3.1-2'}}<div>
+<div>Salary:{{user.Salary|currency}}<div>
+<div>Salary:{{user.Salary|currency:'INR'}}<div>
+<div>Salary:{{user.Salary|currency:'INR':'code'}}<div>
+<div>json,{{jsonVal|json}}</div>
+<code>json,{{user|json}}</code>
+<div>percent:{{0.125456|percent:'2.1-2'}}</div>
+<div>{{[1,2,3,4,5,6]|slice:1:3}}</div>
+
+<h2>Parameterized Pipe</h2>
+<div>DOB:{{user.DOB|date:'short'}}</div>
+<div>DOB:{{user.DOB|date:'long'}}</div>
+
+<h2>Chaining Pipe</h2>
+<div>DOB:{{user.DOB|date:'MMMM'|uppercase}}</div>
+
+<h2>Custom Pipe</h2>
+<!-- <div>{{user2.cityCode|highlight:user2.cityCode}}</div> -->
+<div [innerHTML]="user2.city|highlight:user2.city"></div>
+<!-- <ul>
+    <li *ngFor="let user Of users">
+        <div [innerHTML]="user.city|highlight:user.city"></div>
+    </li>
+</ul> -->
+<ul>
+    <li *ngFor="let user Of users">
+        <div [innerHTML]="user.city|highlight:user.cityCode"></div>
+    </li>
+</ul>

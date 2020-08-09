@@ -17,6 +17,7 @@ import { ProductViewComponent } from './product-view/product-view.component';
 import { ProductEditComponent } from './product-edit/product-edit.component';
 import { ProductIdComponent } from './product-id/product-id.component';
 import { OrderViewComponent } from './order-view/order-view.component';
+import { SearchComponent } from './search/search.component';
 
 @NgModule({
   declarations: [
@@ -34,6 +35,7 @@ import { OrderViewComponent } from './order-view/order-view.component';
     ProductEditComponent,
     ProductIdComponent,
     OrderViewComponent,
+    SearchComponent,
   
   ],
   imports: [
